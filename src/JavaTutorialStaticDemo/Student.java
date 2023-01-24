@@ -12,8 +12,8 @@ public class Student {
 	String name;
 	int age;
 	String address;
-	//static String college= " XYZ";
-	//static int count =0;
+	static String college= " XYZ";
+	static int count =0;
 	
 	
 	public Student(String name,int age,String address)
