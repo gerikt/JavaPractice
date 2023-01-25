@@ -5,5 +5,6 @@
  * @author gerik
  *
  */
-module JavaPractice {
-}
+//module JavaPractice {
+//	requires selenium.chrome.driver;
+//}
