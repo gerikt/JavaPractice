@@ -28,7 +28,7 @@ public class LoginTest {
 		
 		String actualTitle =driver.getTitle();
 		
-		System.out.println(actualTitle);
+		System.out.println("Actual titlte is :" +actualTitle);
 		
 		//expected title
 		String expectedTitle = "Facebook - log in or sign up";
@@ -44,6 +44,9 @@ public class LoginTest {
 		{
 			System.out.println("Title does not match");
 		}
+		
+		//close the browser
+		driver.close();
 		
 	}
 }
