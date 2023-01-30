@@ -14,7 +14,6 @@ public class PopUpTest {
 		driver.get("http://www.dummysoftware.com/popupdummy_testpage.html");
 		driver.manage().window().maximize();
 		
-		
 	
 	}
 }
