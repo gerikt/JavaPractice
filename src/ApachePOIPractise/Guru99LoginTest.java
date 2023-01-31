@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class Guru99LoginTest {
+	//Credentials valid for 20 days
 	
 	EdgeDriver  driver;
 	
