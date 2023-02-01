@@ -27,10 +27,16 @@ public class SignUpForm {
 
 		
 		//dropdownBox
-		WebElement dropDown = driver.findElement(By.id("RESULT_RadioButton-9"));
+		WebElement dropDown = driver.findElement(By.xpath("//*[@id=\"RESULT_RadioButton-9\"]"));
 		
 		Select se = new Select(dropDown);
 		se.selectByIndex(1);
+		
+		//or i can use
+		se.selectByVisibleText("Morning");
+		
+		//or i can use
+		se.selectByValue("Radio-1");
 		
 		
 
