@@ -61,6 +61,8 @@ public class DropdownSortedOptions {
 		{
 			System.out.println("Dropdown is not sorted");
 		}
+		
+		driver.close();
 	}
 
 }
