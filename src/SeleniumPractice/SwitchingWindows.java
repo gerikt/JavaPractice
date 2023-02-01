@@ -41,8 +41,13 @@ public class SwitchingWindows {
 			//if i want to close one of the windows
 			if(t.contains("Frames"))
 			{
+				//it will only close the parent window
 				driver.close();
 			}
+			
+			
+			
+			
 		}
 		
 		
