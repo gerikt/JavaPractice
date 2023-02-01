@@ -11,6 +11,10 @@ public class Guru99ProjectDemo {
 		guru99project.Login();
 		
 		guru99project.addCustomer();
+		
+		String customerId = guru99project.getCustomerId();
+		
+		System.out.println("The customer id is : " + customerId);
 	}
 
 }

@@ -81,4 +81,10 @@ public class Guru99Project {
 			
 			
 		}
+		
+		
+		public String getCustomerId()
+		{
+			return driver.findElement(By.xpath("//table[@id='customer']/tbody/tr[4]/td[2]")).getText();
+		}
 }
