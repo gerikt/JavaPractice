@@ -39,6 +39,9 @@ public class SignUpForm {
 		se.selectByValue("Radio-1");
 		
 		
+		//radio button selection
+		System.out.println(driver.findElement(By.id(null)));
+		
 
 	}
 
