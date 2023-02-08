@@ -50,4 +50,18 @@ public class JavaScriptUtil {
 		
 	}
 	
+	public static void clickElementByJS(WebDriver driver , WebElement element)
+	{
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", element);
+	}
+	
+	public static void generateAlert(WebDriver driver , String message)
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("alert ('" + message +"')" );
+		
+	}
+	
+	
 }

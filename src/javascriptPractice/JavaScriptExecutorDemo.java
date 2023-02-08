@@ -41,9 +41,21 @@ public class JavaScriptExecutorDemo {
 		//System.out.println(driver.getTitle());
 		
 		//or i can use javascript
+		String title = JavaScriptUtil.getTitleByJS(driver);
+		System.out.println(title);
 		
 		
+		//Clicking on element using js
+		
+		WebElement loginBtn = driver.findElement(By.xpath("/html/body/div/header/div/ul/li[1]/a/span"));
+		//loginBtn.click();
 	
+		JavaScriptUtil.clickElementByJS(driver, loginBtn);
+		
+		
+		//alert
+		
+		JavaScriptUtil.generateAlert(driver, "You clicked on login button");
 	
 	}
 
