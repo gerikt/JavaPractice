@@ -57,6 +57,16 @@ public class JavaScriptExecutorDemo {
 		
 		JavaScriptUtil.generateAlert(driver, "You clicked on login button");
 	
+		
+		//refreshing page
+		JavaScriptUtil.refreshBrowserByJS(driver);
+		
+		driver.get("https://www.twoplugs.com/");
+
+		//scroll till element is visible
+		WebElement image =driver.findElement(By.xpath("//*[@id=\"rslides3_s0\"]/div[1]/img"));
+		JavaScriptUtil.scrollIntoView(image, driver);
+		
 	}
 
 }

@@ -63,5 +63,17 @@ public class JavaScriptUtil {
 		
 	}
 	
+	public static void refreshBrowserByJS(WebDriver driver)
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("history.go(0)");
+	}
 	
+	//scroll 
+			public static void scrollIntoView(WebElement element , WebDriver driver)
+			{
+				JavascriptExecutor js = (JavascriptExecutor)driver;
+				js.executeScript("arguments[0].scrollIntoView(true);", element);
+			
+		}
 }
